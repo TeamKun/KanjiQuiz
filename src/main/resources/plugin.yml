@@ -1,0 +1,4 @@
+name: KanjiQuiz
+version: ${project.version}
+main: net.kunmc.lab.kanjiquiz.KanjiQuiz
+api-version: 1.16
