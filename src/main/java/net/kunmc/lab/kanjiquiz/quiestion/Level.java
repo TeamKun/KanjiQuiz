@@ -21,6 +21,6 @@ public enum Level {
     }
 
     public String filePath() {
-        return filePath;
+        return "kanji/" + filePath;
     }
 }

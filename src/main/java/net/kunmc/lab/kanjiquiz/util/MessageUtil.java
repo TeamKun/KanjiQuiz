@@ -29,4 +29,8 @@ public class MessageUtil {
     public static void broadcast(String message) {
         Bukkit.broadcast(Component.text(message));
     }
+
+    public static void log(String message) {
+        Bukkit.getLogger().info(message);
+    }
 }
