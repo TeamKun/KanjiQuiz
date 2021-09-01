@@ -2,6 +2,7 @@ package net.kunmc.lab.kanjiquiz;
 import dev.kotx.flylib.FlyLib;
 import net.kunmc.lab.kanjiquiz.command.Answer;
 import net.kunmc.lab.kanjiquiz.command.Kanji;
+import net.kunmc.lab.kanjiquiz.quiestion.Questions;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class KanjiQuiz extends JavaPlugin {
@@ -11,6 +12,7 @@ public final class KanjiQuiz extends JavaPlugin {
     public void onEnable() {
         plugin = this;
 
+        Questions.init();
         // コマンド読み込み
         FlyLib.create(this, builder -> {
             builder.command(new Kanji());
