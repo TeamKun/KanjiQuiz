@@ -1,4 +1,4 @@
-package net.kunmc.lab.kanjiquiz.command.config;
+package net.kunmc.lab.kanjiquiz.command;
 
 import java.util.function.Function;
 

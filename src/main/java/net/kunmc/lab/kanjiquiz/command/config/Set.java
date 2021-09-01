@@ -3,6 +3,7 @@ package net.kunmc.lab.kanjiquiz.command.config;
 import dev.kotx.flylib.command.Command;
 import dev.kotx.flylib.command.CommandContext;
 import kotlin.Unit;
+import net.kunmc.lab.kanjiquiz.command.ArgumentType;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;
