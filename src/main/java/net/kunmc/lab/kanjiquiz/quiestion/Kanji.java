@@ -1,7 +1,5 @@
 package net.kunmc.lab.kanjiquiz.quiestion;
 
-import net.kunmc.lab.kanjiquiz.util.MessageUtil;
-
 public class Kanji {
     /** 漢字 */
     private String kanji;

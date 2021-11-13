@@ -19,13 +19,14 @@ public class Questions {
      * 指定されたレベルのcsvを読み込み
      */
     private static KanjiList readCsv(Level level) {
+
         return new KanjiList(level, CsvReader.readCsv(level.filePath()));
     }
 
     /**
      * 選択したレベルの漢字リストを取得
      * */
-    private static KanjiList selectLevel(Level level) {
+    public static KanjiList selectLevel(Level level) {
         for (KanjiList kanjiList : list) {
             if (kanjiList.isLevelMatch(level)) {
                 return kanjiList;

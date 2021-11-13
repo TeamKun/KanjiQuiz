@@ -1,8 +1,6 @@
 package net.kunmc.lab.kanjiquiz.quiestion;
 
 import net.kunmc.lab.kanjiquiz.KanjiQuiz;
-import net.kunmc.lab.kanjiquiz.util.MessageUtil;
-import org.bukkit.Bukkit;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -7,6 +7,6 @@ public class Kanji extends Command {
     public Kanji() {
         super("kanji");
 
-        children(new Ask(), new Config());
+        children(new Start(), new Stop(), new Next(), new Config());
     }
 }
