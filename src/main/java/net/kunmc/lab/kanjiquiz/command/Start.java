@@ -42,10 +42,6 @@ public class Start extends Command {
         }
         CommandFeedback feedback = GameManager.start(level);
 
-        if (feedback.isSuccess()) {
-            ctx.success(feedback.message());
-        } else {
-            ctx.fail(feedback.message());
-        }
+        CommonLogic.feedback(ctx, feedback);
     }
 }

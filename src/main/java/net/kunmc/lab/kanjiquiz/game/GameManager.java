@@ -4,10 +4,13 @@ import net.kunmc.lab.kanjiquiz.command.CommandFeedback;
 import net.kunmc.lab.kanjiquiz.quiestion.KanjiList;
 import net.kunmc.lab.kanjiquiz.quiestion.Level;
 import net.kunmc.lab.kanjiquiz.quiestion.Questions;
+import net.kunmc.lab.kanjiquiz.util.MessageUtil;
+import org.bukkit.entity.Player;
 
 public class GameManager {
     private static GameState gameState;
     static KanjiList currentQuestions;
+    static AnswerList answerList = new AnswerList();
 
     public static CommandFeedback start(Level level) {
         if (gameState != null) {
@@ -28,6 +31,7 @@ public class GameManager {
         currentQuestions = null;
         gameState = null;
 
+        MessageUtil.clearPlayerListName();
         return new CommandFeedback(true, "テストを終了します");
     }
 
@@ -39,6 +43,14 @@ public class GameManager {
         gameState = gameState.next();
 
         return feedback;
+    }
+
+    public static CommandFeedback answer(String answer, Player player) {
+        if (!(gameState instanceof AnswerReception)) {
+            return new CommandFeedback(false, "現在解答を受け付けていません");
+        }
+        answerList.add(new Answer(answer, player));
+        return new CommandFeedback(true, "「" + answer + "」と解答しました。もう一度コマンドを打つことで解答を変更できます");
     }
 
     public static boolean isRunning() {

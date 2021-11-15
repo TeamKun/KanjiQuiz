@@ -17,10 +17,6 @@ public class Next extends Command {
     public void execute(@NotNull CommandContext ctx) {
         CommandFeedback feedback = GameManager.next();
 
-        if (feedback.isSuccess()) {
-            ctx.success(feedback.message());
-        } else {
-            ctx.fail(feedback.message());
-        }
+        CommonLogic.feedback(ctx, feedback);
     }
 }

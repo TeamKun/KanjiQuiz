@@ -1,5 +1,8 @@
 package net.kunmc.lab.kanjiquiz.quiestion;
 
+import net.kunmc.lab.kanjiquiz.util.MessageUtil;
+import org.bukkit.Bukkit;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,7 +22,6 @@ public class Questions {
      * 指定されたレベルのcsvを読み込み
      */
     private static KanjiList readCsv(Level level) {
-
         return new KanjiList(level, CsvReader.readCsv(level.filePath()));
     }
 
@@ -32,7 +34,6 @@ public class Questions {
                 return kanjiList;
             }
         }
-
         return null;
     }
 }

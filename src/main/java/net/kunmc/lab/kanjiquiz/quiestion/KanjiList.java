@@ -1,5 +1,7 @@
 package net.kunmc.lab.kanjiquiz.quiestion;
 
+import org.bukkit.Bukkit;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -26,14 +28,14 @@ public class KanjiList {
 
     /**
      * 指定されたレベルと一致しているか判定
-     * */
+     */
     boolean isLevelMatch(Level level) {
-        return level.equals(level);
+        return this.level.equals(level);
     }
 
     /**
      * 漢字を取得
-     * */
+     */
     public Kanji getQuestion() {
         if (this.kanjiList.size() == 0) {
             Collections.shuffle(this.finishedList);
@@ -44,5 +46,9 @@ public class KanjiList {
         Kanji question = this.kanjiList.remove(0);
         finishedList.add(question);
         return question;
+    }
+
+    public void log() {
+        Bukkit.getLogger().info(level.level());
     }
 }

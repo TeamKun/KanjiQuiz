@@ -21,11 +21,13 @@ public class AnswerReception implements GameState {
 
     @Override
     public void display() {
-        MessageUtil.sendTitleAll(this.currentQuestion.getKanji(), "/a <読み(ひらがな)> で解答",0,20,20);
+        MessageUtil.sendTitleAll(this.currentQuestion.getKanji(), "/a <よみ(ひらがな)> で解答",0,20,20);
     }
 
     @Override
     public CommandFeedback execute() {
+        GameManager.answerList.judge(this.currentQuestion);
+
         return new CommandFeedback(true, "解答を表示します");
     }
 }

@@ -4,6 +4,8 @@ import net.kunmc.lab.kanjiquiz.command.Answer;
 import net.kunmc.lab.kanjiquiz.command.Kanji;
 import net.kunmc.lab.kanjiquiz.game.DisplayTask;
 import net.kunmc.lab.kanjiquiz.quiestion.Questions;
+import net.kunmc.lab.kanjiquiz.util.MessageUtil;
+import net.kunmc.lab.kanjiquiz.util.ScoreBoard;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class KanjiQuiz extends JavaPlugin {
@@ -21,10 +23,13 @@ public final class KanjiQuiz extends JavaPlugin {
         });
 
         new DisplayTask().runTaskTimerAsynchronously(this, 0, 1);
+        ScoreBoard.init();
     }
 
     @Override
     public void onDisable() {
         // Plugin shutdown logic
+        ScoreBoard.clear();
+        MessageUtil.clearPlayerListName();
     }
 }
