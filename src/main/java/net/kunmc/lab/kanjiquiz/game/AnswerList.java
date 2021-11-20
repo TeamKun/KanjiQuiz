@@ -1,6 +1,7 @@
 package net.kunmc.lab.kanjiquiz.game;
 
 import net.kunmc.lab.kanjiquiz.quiestion.Kanji;
+import net.kunmc.lab.kanjiquiz.util.MessageUtil;
 
 import java.util.ArrayList;
 import java.util.List;

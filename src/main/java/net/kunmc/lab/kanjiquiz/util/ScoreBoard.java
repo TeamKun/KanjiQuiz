@@ -14,15 +14,18 @@ public class ScoreBoard {
 
     public static void init() {
         manager = Bukkit.getServer().getScoreboardManager().getMainScoreboard();
-
-        score = manager.registerNewObjective("score", "dummy", Component.text("点数"));
-
+        score = manager.getObjective("score");
+        if (score == null) {
+            score = manager.registerNewObjective("score", "dummy", Component.text("点数"));
+        }
         score.setDisplaySlot(DisplaySlot.PLAYER_LIST);
     }
 
     public static void clear() {
         manager.clearSlot(DisplaySlot.PLAYER_LIST);
-        score.unregister();
+        if (score != null) {
+            score.unregister();
+        }
     }
 
     public static void addPoint(Player player) {

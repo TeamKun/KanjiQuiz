@@ -24,6 +24,9 @@ public class ResultDisplay implements GameState {
 
     @Override
     public CommandFeedback execute() {
+        GameManager.answerList = new AnswerList();
+        MessageUtil.setPlayerListNameNoAnswer();
+
         return new CommandFeedback(true, "次の問題を表示します");
     }
 }

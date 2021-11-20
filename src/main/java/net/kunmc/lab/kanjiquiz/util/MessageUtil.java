@@ -50,4 +50,14 @@ public class MessageUtil {
             player.playerListName(Component.text(player.getName()));
         }
     }
+
+    /**
+     * プレイヤーリストに無回答と表示
+     * */
+    public static void setPlayerListNameNoAnswer() {
+        for (Player onlinePlayer : Bukkit.getOnlinePlayers()) {
+            Player player = onlinePlayer.getPlayer();
+            player.playerListName(Component.text(player.getName() + " : 無回答"));
+        }
+    }
 }
