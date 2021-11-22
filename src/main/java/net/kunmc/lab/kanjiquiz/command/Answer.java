@@ -28,7 +28,7 @@ public class Answer extends Command {
             ctx.fail("エラー:回答を入力してください");
             return;
         }
-        
+
         String answer = ctx.getTypedArgs().get(0).toString();
 
         // ひらがなチェック
