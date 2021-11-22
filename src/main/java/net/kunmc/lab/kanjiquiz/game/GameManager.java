@@ -35,6 +35,7 @@ public class GameManager {
         gameState = null;
 
         MessageUtil.clearPlayerListName();
+        answerList = new AnswerList();
         return new CommandFeedback(true, "テストを終了します");
     }
 

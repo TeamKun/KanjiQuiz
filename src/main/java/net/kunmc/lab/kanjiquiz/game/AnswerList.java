@@ -12,7 +12,6 @@ public class AnswerList {
         for (int i = 0; i < this.list.size(); i++) {
             if (list.get(i).uuid().equals(answer.uuid())) {
                 list.remove(i);
-                return;
             }
         }
 
