@@ -6,74 +6,118 @@ public class DecorationConst {
      * カラーコード
      */
 
-    /** ブラック */
+    /**
+     * ブラック
+     */
     public final static String BLACK = "§0";
 
-    /** ダークブルー */
+    /**
+     * ダークブルー
+     */
     public final static String DARK_BLUE = "§1";
 
-    /** ダークグリーン */
+    /**
+     * ダークグリーン
+     */
     public final static String DARK_GREEN = "§2";
 
-    /** ダークアクア */
+    /**
+     * ダークアクア
+     */
     public final static String DARK_AQUA = "§3";
 
-    /** ダークレッド */
+    /**
+     * ダークレッド
+     */
     public final static String DARK_RED = "§4";
 
-    /** ダークパープル */
+    /**
+     * ダークパープル
+     */
     public final static String DARK_PURPLE = "§5";
 
-    /** ゴールド */
+    /**
+     * ゴールド
+     */
     public final static String GOLD = "§6";
 
-    /** グレー */
+    /**
+     * グレー
+     */
     public final static String GRAY = "§7";
 
-    /** ダークグレー */
+    /**
+     * ダークグレー
+     */
     public final static String DARK_GRAY = "§8";
 
-    /** ブルー */
+    /**
+     * ブルー
+     */
     public final static String BLUE = "§9";
 
-    /** グリーン */
+    /**
+     * グリーン
+     */
     public final static String GREEN = "§a";
 
-    /** アクア */
+    /**
+     * アクア
+     */
     public final static String AQUA = "§b";
 
-    /** レッド */
+    /**
+     * レッド
+     */
     public final static String RED = "§c";
 
-    /** ライトパープル */
+    /**
+     * ライトパープル
+     */
     public final static String LIGHT_PURPLE = "§d";
 
-    /** イエロー */
+    /**
+     * イエロー
+     */
     public final static String YELLOW = "§e";
 
-    /** ホワイト */
+    /**
+     * ホワイト
+     */
     public final static String WHITE = "§f";
 
     /**
      * 装飾コード
      */
 
-    /** 難読化 */
+    /**
+     * 難読化
+     */
     public final static String OBFUSCATED = "§k";
 
-    /** ボールド */
+    /**
+     * ボールド
+     */
     public final static String BOLD = "§l";
 
-    /** 取り消し線 */
+    /**
+     * 取り消し線
+     */
     public final static String STRIKETHROUGH = "§m";
 
-    /** 下線 */
+    /**
+     * 下線
+     */
     public final static String UNDERLINE = "§n";
 
-    /** イタリック */
+    /**
+     * イタリック
+     */
     public final static String ITALIC = "§o";
 
-    /** リセット */
+    /**
+     * リセット
+     */
     public final static String RESET = "§r";
 
 }

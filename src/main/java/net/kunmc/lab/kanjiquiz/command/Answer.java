@@ -16,7 +16,7 @@ public class Answer extends Command {
         this.permission(Permission.getEVERYONE());
 
         usage(usageBuilder -> {
-        usageBuilder.textArgument("[よみ]", TextArgument.Type.PHRASE);
+            usageBuilder.textArgument("[よみ]", TextArgument.Type.PHRASE);
         });
     }
 

@@ -19,7 +19,7 @@ public class ResultDisplay implements GameState {
 
     @Override
     public void display() {
-        MessageUtil.sendTitleAll("A." + this.question.getReading(), "", 0, 20 , 20);
+        MessageUtil.sendTitleAll("A." + this.question.getReading(), "", 0, 20, 20);
     }
 
     @Override

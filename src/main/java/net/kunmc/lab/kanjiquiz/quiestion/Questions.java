@@ -1,8 +1,5 @@
 package net.kunmc.lab.kanjiquiz.quiestion;
 
-import net.kunmc.lab.kanjiquiz.util.MessageUtil;
-import org.bukkit.Bukkit;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,7 +8,7 @@ public class Questions {
 
     /**
      * 初期化処理
-     * */
+     */
     public static void init() {
         for (Level value : Level.values()) {
             list.add(readCsv(value));
@@ -27,7 +24,7 @@ public class Questions {
 
     /**
      * 選択したレベルの漢字リストを取得
-     * */
+     */
     public static KanjiList selectLevel(Level level) {
         for (KanjiList kanjiList : list) {
             if (kanjiList.isLevelMatch(level)) {

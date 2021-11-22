@@ -4,8 +4,6 @@ import net.kunmc.lab.kanjiquiz.command.CommandFeedback;
 import net.kunmc.lab.kanjiquiz.quiestion.Kanji;
 import net.kunmc.lab.kanjiquiz.util.MessageUtil;
 
-import java.lang.reflect.Member;
-
 public class AnswerReception implements GameState {
 
     private Kanji currentQuestion;
@@ -21,7 +19,7 @@ public class AnswerReception implements GameState {
 
     @Override
     public void display() {
-        MessageUtil.sendTitleAll(this.currentQuestion.getKanji(), "/a <よみ(ひらがな)> で解答",0,20,20);
+        MessageUtil.sendTitleAll(this.currentQuestion.getKanji(), "/a <よみ(ひらがな)> で解答", 0, 20, 20);
     }
 
     @Override
