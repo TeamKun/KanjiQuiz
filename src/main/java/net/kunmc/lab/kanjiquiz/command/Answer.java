@@ -24,7 +24,7 @@ public class Answer extends Command {
     public void execute(@NotNull CommandContext ctx) {
         Player player = ctx.getPlayer();
 
-        if (ctx.getTypedArgs().size() >= 0) {
+        if (ctx.getTypedArgs().size() <= 0) {
             ctx.fail("エラー:回答を入力してください");
             return;
         }
