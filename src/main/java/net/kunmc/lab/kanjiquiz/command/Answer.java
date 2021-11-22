@@ -23,6 +23,12 @@ public class Answer extends Command {
     @Override
     public void execute(@NotNull CommandContext ctx) {
         Player player = ctx.getPlayer();
+
+        if (ctx.getTypedArgs().size() >= 0) {
+            ctx.fail("エラー:回答を入力してください");
+            return;
+        }
+        
         String answer = ctx.getTypedArgs().get(0).toString();
 
         // ひらがなチェック
